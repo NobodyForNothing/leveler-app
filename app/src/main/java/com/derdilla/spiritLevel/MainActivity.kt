@@ -18,7 +18,6 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import java.text.DecimalFormat
@@ -56,9 +55,9 @@ class MainActivity : ComponentActivity(), SensorEventListener {
     override fun onResume() {
         super.onResume()
         if (useFallback) {
-            sensorManager.registerListener(this, accelerometer, SensorManager.SENSOR_DELAY_NORMAL)
+            sensorManager.registerListener(this, accelerometer, SensorManager.SENSOR_DELAY_UI)
         } else {
-            sensorManager.registerListener(this, gravitySensor, SensorManager.SENSOR_DELAY_NORMAL)
+            sensorManager.registerListener(this, gravitySensor, SensorManager.SENSOR_DELAY_UI)
         }
     }
 
@@ -95,7 +94,7 @@ class MainActivity : ComponentActivity(), SensorEventListener {
     }
 
     private fun draw() {
-        val df = DecimalFormat("#.##")
+        val df = DecimalFormat("##.##")
         setContent {
             Column(
                 modifier = Modifier.fillMaxSize(),
@@ -103,9 +102,12 @@ class MainActivity : ComponentActivity(), SensorEventListener {
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 Text(
-                    "X: " + df.format(x) + "\nY: " + df.format(y),
+                    "X: " + df.format((kotlin.math.abs(x)/9.81)*90) + "°",
                     fontSize = 30.sp,
-                    fontWeight = FontWeight.Bold
+                )
+                Text(
+                    " Y: " + df.format((kotlin.math.abs(y)/9.81)*90) + "°",
+                    fontSize = 30.sp,
                 )
                 Canvas(
                     modifier = Modifier
