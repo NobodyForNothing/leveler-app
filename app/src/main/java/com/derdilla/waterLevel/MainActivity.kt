@@ -22,6 +22,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import java.text.DecimalFormat
+import kotlin.math.sign
 
 
 class MainActivity : ComponentActivity(), SensorEventListener {
@@ -125,12 +126,19 @@ class MainActivity : ComponentActivity(), SensorEventListener {
                         color = Color.Black,
                         radius = 10.dp.toPx(),
                         center = Offset(
-                            x = this.size.width / 2 + x * 28,
-                            y = this.size.height / 2 - y * 28 // substract for bubble effect
+                            x = (this.size.width.toDp().toPx() / 2 + sign(x) * f(x) * 250).toDp().toPx(),
+                            y = (this.size.height.toDp().toPx() / 2 - sign(y) * f(y) * 250).toDp().toPx() // substract for bubble effect
                         )
                     )
                 }
             }
         }
+    }
+
+    /***
+     * function to calculate the position of the knob returns a value between 0 and 1
+     */
+    private fun f(x: Float): Float {
+        return 1 - 1*(1/(0.5* kotlin.math.abs(x) + 1)).toFloat()
     }
 }
