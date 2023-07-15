@@ -1,4 +1,4 @@
-package com.derdilla.waterLevel
+package com.derdilla.spiritLevel
 
 import android.content.Context
 import android.hardware.Sensor
@@ -107,9 +107,6 @@ class MainActivity : ComponentActivity(), SensorEventListener {
                     fontSize = 30.sp,
                     fontWeight = FontWeight.Bold
                 )
-                /* Text(gravitySensor.toString())
-                //Text(accelerometer.toString())
-                Text(acel) */
                 Canvas(
                     modifier = Modifier
                         .size(size = 300.dp)
@@ -135,7 +132,7 @@ class MainActivity : ComponentActivity(), SensorEventListener {
         }
     }
 
-    /***
+    /**
      * function to calculate the position of the knob returns a value between 0 and 1
      */
     private fun f(x: Float): Float {

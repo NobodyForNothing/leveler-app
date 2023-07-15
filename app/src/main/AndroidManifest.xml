@@ -13,16 +13,11 @@
         android:theme="@style/Theme.WaterLevel"
         tools:targetApi="31">
         <activity
-            android:name=".ui.MainActivity"
-            android:exported="false"
-            android:label="@string/title_activity_main"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.WaterLevel"
-            tools:ignore="LockedOrientationActivity" />
-        <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.WaterLevel">
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.WaterLevel"
+            tools:ignore="LockedOrientationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
