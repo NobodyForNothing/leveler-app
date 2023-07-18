@@ -1,1 +1,1 @@
-A minimalistic FOSS app for on the go leveling
+minimalistic on-the-go leveling

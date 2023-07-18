@@ -1,1 +1,2 @@
-<p><i>Wasserwaage</i> nutzt die eingebauten Gerätesensoren, um Ordnung zu schaffen, wenn sonst nichts zur Hand ist. Die App wurde mit dem Ziel entwickelt einfach, kompatibel und klein zu sein, damit sie auch wirklich überall funktioniert.</p>
+<p><i>Wasserwaage</i> nutzt die eingebauten Gerätesensoren, um zu ebnen, wenn sonst nichts zur Hand ist. Die App wurde mit dem Ziel entwickelt einfach, kompatibel und klein zu sein, damit sie auch wirklich überall funktioniert.</p>
+<p>Die App sollte in der Standardkonfiguration funktionieren. Falls bei dem Gerät eine Kamera oder ähnliches heraussteht und sie es nicht so positionieren können, dass sie das Gerät nicht dreht, benötigen sie eine ausgerichtete Referenzfläche zur Kalibration.</p>
