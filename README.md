@@ -1,4 +1,4 @@
-Still an interesting app, but since creating it I found the far simpler [vaservaga]([https://play.google.com/store/apps/details?id=com.whitipet.vaservaga](https://github.com/whitipet/vaservaga-android) (13.7KB).
+Still an interesting app, but since creating it I found the far simpler [vaservaga](https://play.google.com/store/apps/details?id=com.whitipet.vaservaga) (13.7KB).
 
 ---
 
