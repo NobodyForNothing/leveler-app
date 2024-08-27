@@ -1,3 +1,7 @@
+Still an interesting app, but since creating it I found the far simpler [vaservaga]([https://play.google.com/store/apps/details?id=com.whitipet.vaservaga](https://github.com/whitipet/vaservaga-android) (13.7KB).
+
+---
+
 <div align="center">  
   <img src="https://github.com/NobodyForNothing/spirit-level-android/blob/7bf12267bf9ba6f971007eb64227967af1e4b4e2/fastlane/metadata/android/en-US/images/icon.png" width="20%" height="20%"></img>
 </div>
